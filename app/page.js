@@ -1,6 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import StickerDisplay from "@/shared/components/StickerDisplay";
+import StickerGallery from "@/shared/components/StickerGallery";
 
 export default function Home() {
-  return <div>Welcome to my app</div>;
+  return (
+    <div>
+      Welcome to my app
+      <StickerDisplay displayType="Type A"></StickerDisplay>
+      <StickerGallery GalleryType="Gallery"> </StickerGallery>
+    </div>
+  );
 }
